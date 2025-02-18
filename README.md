@@ -1,6 +1,6 @@
 ### Summary
 
-This code may be cloned via git clone https://github.com/mlanduyt/Newtons_Method/
+This code may be cloned via git clone https://github.com/mlanduyt/material_model
 
 The main function of this code is executed by the running the 'tutorial' file. Example 5 allows for user input. 
 
