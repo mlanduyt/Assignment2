@@ -1,7 +1,6 @@
 from variables import *
-from function1 import *
-
-import os
+from function1 import bisection
+from function1 import sign
 
 def test_error ():
     f = lambda x: 2*(x+2)
