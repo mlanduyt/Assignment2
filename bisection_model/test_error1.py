@@ -1,5 +1,5 @@
 from variables import *
-from bisection_model.function1 import *
+from function1 import *
 
 import os
 

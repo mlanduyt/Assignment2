@@ -1,6 +1,6 @@
 #Import Info from other scripts
 import random
-from Newtons_model.function2 import *
+from function2 import *
 import os
 from pathlib import Path
 
