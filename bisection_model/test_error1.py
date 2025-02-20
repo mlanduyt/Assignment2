@@ -111,3 +111,13 @@ def test_spread():
     m = a+b
     assert m == 0
 
+def test_errors ():
+    f = lambda x: 2**x-10
+    tol = 0.01
+    a = -5
+    b = 10
+    # Call the bisection method
+    root = bisection(f, a, b, tol)
+    #Define Error, expected answer = 3.3
+    root = root-3.3
+    assert root <= 3*tol

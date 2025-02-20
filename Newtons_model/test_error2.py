@@ -138,3 +138,28 @@ def test_spread():
     m = a+b
     assert m == 0
 
+
+def test_root ():
+    f = lambda x: 2*x
+    tol = 0.01
+    x0 = 0
+    root = newtons_method (f, x0, tol)
+    #Define Error, expected answer = 0
+    assert root <= tol
+
+def test_decimal ():
+    f = lambda x: 2*x+1
+    tol = 0.01
+    x0 = 0
+    root = multi_root (f)
+    #Define Error, expected answer = -0.5
+    root = root+0.5
+    assert root <= tol
+
+def test_compare ():
+    f = lambda x: 2*x+1
+    tol = 0.01
+    x0 = 0
+    root1 = multi_root (f)
+    root2 = newtons_method (f, x0, tol)
+    assert root2-root1 <= 2*tol
