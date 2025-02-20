@@ -1,8 +1,5 @@
 import random
 tol = 0.001
-#list1 = range (-50,50)
-
-#f = lambda x: x**2 - 6
 
 # define function, tol used to define tolerance
 def newtons_method (f, x0, tol):

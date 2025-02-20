@@ -2,6 +2,7 @@ from function2 import *
 from MultiRoot import *
 import os
 from pathlib import Path
+import random
 
 def test_error ():
     f = lambda x: 2*(x+2)
@@ -16,15 +17,25 @@ def test_error ():
         print ("test failed")
 
 def test_zero():
-    F = lambda x: -x**2
+    F = lambda x: x**2
     root = multi_root(f)
-    if all(root) < 1:
-        print ("test passed")
-    else:
-        print ("test failed")
-    
+    root = root
+    assert root < 2
 
     
+def test_multi ():
+    f = lambda x: 2*x + 3
+    root = multi_root(f)
+    assert root <= 10
+
+def test_list ():
+    list = list1
+    assert all(list1) <= 51
+
+def test_roots():
+    f = lambda x: x
+    roots = multi_root (f)
+    assert roots < 0.001 
     
 
 

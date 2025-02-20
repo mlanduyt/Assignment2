@@ -20,14 +20,7 @@ def multi_root(f):
         if root3-root1 < 2*tol:
             x0 = random.choice (list1)
             root4 = newtons_method(f,x0,tol)
-            if root4-root1 < 2*tol:
-                #print (root1)
-                roots = [root1]
-                return roots
-            else:
-                #print (root4) and (root1)
-                roots = [root1, root4]
-                return roots
+            return root4
         else:
             #print (root3) and (root1)
             roots = [root1, root3]
