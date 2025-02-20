@@ -1,6 +1,6 @@
 from variables import *
-from function import bisection
-from function import sign
+import function.py
+
 import os
 from pathlib import Path
 
