@@ -19,7 +19,6 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install numpy
           pip install pytest pytest-cov
 
       - name: Run tests
