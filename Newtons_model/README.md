@@ -1,7 +1,5 @@
 ### Summary
 
-This code may be cloned via git clone https://github.com/mlanduyt/Newtons_Method/
-
 The main function of this code is executed by the running the 'tutorial' file.
 
 This program is designed to execute newton's method to determine the root of any continuous function. This uses the derivative of a function to 'guess' the root, finding the local value and repeating until the value of the function is within a tolerance range of the zero.

@@ -13,7 +13,7 @@ def newtons_method (f, x0, tol):
     #'slope' or tangent found to initially guess root
     tangent = (f(a)-f(b))/(2*r)
     #attempt to resolve if the slope is found to be near zero
-    if tangent < 0.2:
+    if abs(tangent) < 0.2:
         x0 = x0+1
         return newtons_method (f, x0, tol)
     else:
