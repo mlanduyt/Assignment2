@@ -1,4 +1,3 @@
-import numpy as np
 from variables import list1
 
 import random
