@@ -5,7 +5,7 @@ def sign (x):
         return 1
     elif x == 0:
         return 0
-    else x < 0:
+    elif x < 0:
         return -1
 
 import random
