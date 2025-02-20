@@ -2,7 +2,7 @@ name: Run tests and upload coverage
 
 on: 
   push:
-    branches: [ main ]
+    branches: [bisection_model]
 
 jobs:
   test:
