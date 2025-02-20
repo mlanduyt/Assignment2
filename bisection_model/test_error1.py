@@ -25,4 +25,4 @@ def test_input():
 def test_sign():
     x = 5
     y = sign(x)
-    asset y = 1
+    assert y = 1
