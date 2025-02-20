@@ -1,8 +1,7 @@
 from variables import *
-import function.py
+import function
 
 import os
-from pathlib import Path
 
 def test_error ():
     f = lambda x: 2*(x+2)
