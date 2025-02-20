@@ -17,7 +17,7 @@ def test_error ():
     error = root + 2
     assert tol>error
 
-def test_input()
+def test_input():
     f = lambda x: x
     tol = 0.01
     z = a+b
