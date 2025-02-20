@@ -1,4 +1,4 @@
-from function import *
+from Newtons_model.function2 import *
 from MultiRoot import *
 import os
 from pathlib import Path
