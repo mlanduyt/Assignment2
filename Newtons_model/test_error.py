@@ -1,5 +1,3 @@
-import numpy as np
-
 from function import *
 from MultiRoot import *
 import os
