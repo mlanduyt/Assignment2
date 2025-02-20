@@ -11,7 +11,8 @@ def sign (x):
 import random
 list2 = list1
 # define function, tol used to define tolerance
-def bisection(f, a, b, tol):
+
+def bisection (f, a, b, tol):
 
     # a and b must be of opposite sign
     if sign(f(a)) == sign(f(b)):

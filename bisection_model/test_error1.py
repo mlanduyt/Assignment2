@@ -1,4 +1,3 @@
-
 from variables import *
 from function import *
 import os
@@ -11,7 +10,6 @@ def test_error ():
     b = 10
     # Call the bisection method
     root = bisection (f, a, b, tol)
-
     #Define Error, expected answer = -2
     error = root + 2
     assert tol>error
