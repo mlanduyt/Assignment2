@@ -1,6 +1,14 @@
 import random
 tol = 0.001
 
+def sign (x):
+    if x > 0:
+        return 1
+    elif x == 0:
+        return 0
+    elif x < 0:
+        return -1
+
 # define function, tol used to define tolerance
 def newtons_method (f, x0, tol):
     #parameters to numerically guess derivative or 'slope'
