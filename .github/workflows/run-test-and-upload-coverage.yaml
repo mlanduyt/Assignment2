@@ -19,6 +19,7 @@ jobs:
 
       - name: Install dependencies
         run: |
+          pip install libpath
           pip install pytest pytest-cov
 
       - name: Run tests
