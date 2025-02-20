@@ -1,4 +1,5 @@
 from variables import *
+from pathlib import Path
 from function1 import bisection
 from function1 import sign
 
@@ -8,7 +9,7 @@ def test_error ():
     a = -5
     b = 10
     # Call the bisection method
-    root = bisection (f, a, b, tol)
+    root = bisection(f, a, b, tol)
     #Define Error, expected answer = -2
     error = root + 2
     assert tol>error
