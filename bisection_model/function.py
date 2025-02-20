@@ -22,16 +22,16 @@ def bisection(f, a, b, tol):
     # establish midpoint 
     m = (1/2)*(a+b)
 
-    if np.abs(f(m)) < tol:
+    if abs(f(m)) < tol:
         return m
         print (m)
     # midpoint meets satisfying condition
 
-    elif np.sign(f(a)) == np.sign(f(m)):
+    elif sign(f(a)) == sign(f(m)):
         return bisection (f, m, b, tol)
         # midpoint replaces a
 
-    elif np.sign(f(b)) == np.sign(f(m)):
+    elif sign(f(b)) == sign(f(m)):
         return bisection (f, a, m, tol)
         # midpoint replaces b
 
