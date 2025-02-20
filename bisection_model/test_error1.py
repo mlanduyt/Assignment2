@@ -22,4 +22,7 @@ def test_input():
     z = a+b
     assert z < 100.1
 
-    
+def test_sign():
+    x = 5
+    y = sign(x)
+    asset y = 1

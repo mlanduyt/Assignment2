@@ -1,12 +1,20 @@
 from variables import list1
 
+def sign (x):
+    if x > 0:
+        return 1
+    elif x == 0:
+        return 0
+    else x < 0:
+        return -1
+
 import random
 list2 = list1
 # define function, tol used to define tolerance
 def bisection(f, a, b, tol):
 
     # a and b must be of opposite sign
-    if np.sign(f(a)) == np.sign(f(b)):
+    if sign(f(a)) == sign(f(b)):
         a = random.choice(list1)
         b = random.choice(list1)
         return bisection (f, a, b, tol)
