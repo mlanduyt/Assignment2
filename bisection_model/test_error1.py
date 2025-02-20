@@ -1,5 +1,5 @@
 from variables import *
-import function
+from function import *
 
 import os
 
