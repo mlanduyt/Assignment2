@@ -12,10 +12,10 @@ class Nodes:
         self.forces = np.reshape(load,(self.numNodes*6,1))
 
 class Elements:
-    def __init__(self,connections,E,nu,A,Iz,Iy,Ip,J):
+    def __init__(self,connections,E,v,A,Iz,Iy,Ip,J):
         self.connections = connections
         self.E = E
-        self.nu = nu
+        self.v = v
         self.A = A
         self.Iz = Iz
         self.Iy = Iy
@@ -48,7 +48,7 @@ def find_global_frame_stiffness(Nodes,Elements):
         node2_dof_ind2 = 6 * (node1 + 1)
 
         # material
-        mats = np.array([Elements.E[elm_ind], Elements.nu[elm_ind], Elements.A[elm_ind], Elements.L[elm_ind], Elements.Iy[elm_ind], Elements.Iz[elm_ind], Elements.J[elm_ind]])
+        mats = np.array([Elements.E[elm_ind], Elements.v[elm_ind], Elements.A[elm_ind], Elements.L[elm_ind], Elements.Iy[elm_ind], Elements.Iz[elm_ind], Elements.J[elm_ind]])
         ke = local_elastic_stiffness_matrix_3D_beam(*mats)
         gamma = rotation_matrix_3D(x1,y1,z1,x2,y2,z2)
         Gamma = transformation_matrix_3D(gamma)
