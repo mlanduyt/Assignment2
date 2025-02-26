@@ -1,4 +1,5 @@
 import numpy as np
+from src import *
 
 
 def local_elastic_stiffness_matrix_3D_beam(E: float, nu: float, A: float, L: float, Iy: float, Iz: float, J: float) -> np.ndarray:
@@ -86,7 +87,7 @@ def check_parallel(vec_1: np.ndarray, vec_2: np.ndarray):
         return
 
 
-def rotation_matrix_3D(x1: float, y1: float, z1: float, x2: float, y2: float, z2: float, v_temp: np.ndarray = None):
+def rotation_matrix_3D(x1: float, y1: float, z1: float, x2: float, y2: float, z2: float, z: np.ndarray = None):
     """
     3D rotation matrix
     source: Chapter 5.1 of McGuire's Matrix Structural Analysis 2nd Edition
@@ -106,6 +107,7 @@ def rotation_matrix_3D(x1: float, y1: float, z1: float, x2: float, y2: float, z2
     nxp = (z2 - z1) / L
     local_x = np.asarray([lxp, mxp, nxp])
 
+    v_temp = z
     # choose a vector to orthonormalize the y axis if one is not given
     if v_temp is None:
         # if the beam is oriented vertically, switch to the global y axis
