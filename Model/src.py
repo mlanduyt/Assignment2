@@ -106,3 +106,4 @@ def structure(nodes, element_connect, force_applied, supports):
 def check_singular(matrix: np.ndarray):
     if np.linalg.cond(matrix) > 1e10:
         raise ValueError("Singular stiffness matrix detected. Check supports.")
+
