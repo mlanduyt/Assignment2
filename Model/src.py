@@ -37,6 +37,7 @@ class element:
         if self.L == 0:
             raise ValueError("Duplicate nodes, review node input")
 
+
         # Calculates element properties
         self.k_e = local_elastic_stiffness_matrix_3D_beam(self.E, self.nu, self.A, self.L, self.Iy, self.Iz, self.J) # Obtains local elastic stiffness matrix    
         self.gamma = rotation_matrix_3D(self.x1, self.y1, self.z1, self.x2, self.y2, self.z2, self.z) # Rotation Matrix
