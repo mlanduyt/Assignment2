@@ -108,3 +108,11 @@ def check_singular(matrix: np.ndarray):
     if np.linalg.cond(matrix) > 1e10:
         raise ValueError("Singular stiffness matrix detected. Check supports.")
 
+def elastic_critical_load_analysis(elements, displacements):
+    critical_loads = []
+    for element1 in elements:
+        L = 8
+        k_g = local_geometric_stiffness_matrix_3D_beam(L, element.A, element.Ip, *displacements[:6])
+        eigvals = np.linalg.eigvals(k_g)
+        critical_loads.append(min(eigvals))
+    return np.array(critical_loads)

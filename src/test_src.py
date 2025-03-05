@@ -2,7 +2,7 @@ import sys
 import os
 import numpy as np
 import pytest
-from src import *
+from src.src import *
 from math_utils import *
 
 def test_tutorial():
