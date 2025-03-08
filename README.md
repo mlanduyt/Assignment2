@@ -17,14 +17,14 @@ python --version
 ```
 install the applicable pips utilized for this code
 ```bash
-pip install numpy
-pip install pathlib
+pip install -e .
 ```
 ### Background
-This code is meant to create and solve structural matrices, these can be defined by creating node points which are then connected via 'connections'. The inputs for this analysis can be found in the tutorial.ipynb section of this file. These numbers may be changed and evaluated by the solver which calls the main portion of the analysis from analysis.py. Some functions are utilized from the math_utils.py script.
+This code is meant to create and solve strutural response. This is performed by defining nodes, connecting them through matrices, assigning boundary conditions and external forces. This code determines displacements, rotations, and internal forces; which are subsequently utilized to determine the buckling mode and shape. 
 
-### Tutorial
-The tutorial serves as the main execution of the code, in which inputs may be changed and the outputs (displacements and forces) are exported. 
+### Examples/Template
+The problems required to be solved are worked out under the example folder, a template is provided to be filled out for any future problem. 
 
 ### Tests
 Tests are executed via the Pytest function
+
