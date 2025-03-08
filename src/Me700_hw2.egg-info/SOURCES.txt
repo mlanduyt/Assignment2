@@ -3,7 +3,6 @@ README.md
 pyproject.toml
 src/math_utils.py
 src/src.py
-src/test_src.py
 src/Me700_hw2.egg-info/PKG-INFO
 src/Me700_hw2.egg-info/SOURCES.txt
 src/Me700_hw2.egg-info/dependency_links.txt

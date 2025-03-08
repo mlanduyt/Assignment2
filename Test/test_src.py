@@ -102,6 +102,7 @@ def test_beamsolver_init(simple_beam, simple_bc):
     assert solver.bc is simple_bc
     assert solver.internal_forces is None
 
+@pytest.fixture
 def test_build_stiffness_matrix(mock_trans, mock_rot, mock_local, simple_beam, simple_bc):
     mock_local.return_value = np.eye(12) * 1e9
     mock_rot.return_value = np.eye(3)
