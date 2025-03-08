@@ -18,10 +18,7 @@ jobs:
         uses: actions/setup-python@v4
 
       - name: Install dependencies
-        run: |
-          pip install libpath
-          pip install numpy
-          pip install pytest pytest-cov
+        run: pip install -e .
 
       - name: Run tests
         run: |
@@ -31,3 +28,5 @@ jobs:
         uses: codecov/codecov-action@v5
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
+          file: ./coverage.xml
+          fail_ci_if_error: true  # Ensure failure if upload fails
