@@ -13,7 +13,7 @@ class Beam:
         self.nodes = np.array(nodes, dtype=float)
         self.elements = np.array(elements, dtype=int)
         self.E = E
-        self.nu = nu
+        self.nu = nu 
         self.A = A
         self.Iy = Iy
         self.Iz = Iz

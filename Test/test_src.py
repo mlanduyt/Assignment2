@@ -163,3 +163,24 @@ def test_solve_buckling(simple_beam, simple_bc):
     if len(eigvals) > 0:
         assert 0 in buckling_forces
 
+def test_add ():
+    z = 2+2
+    assert z == 4
+
+def test_subtract():
+    z = 3-2
+    assert z == 1
+
+def test_multiply ():
+    z = 2*2
+    assert z == 4
+
+def test_divide ():
+    z = 4/2
+    assert z == 2
+
+def test_eig ():
+    A = np.array([[1, 3, 2],[2, 2, 1],[3, 1, 3]])
+    e_vals, e_vecs = np.linalg.eig(A)
+    assert math.isclose (e_vals[0], 6, rel_tol=0.1)
+
