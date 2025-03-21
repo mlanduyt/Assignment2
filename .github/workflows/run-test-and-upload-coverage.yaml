@@ -17,8 +17,11 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v4
 
-      - name: Install dependencies
+      - name: install dependencies
         run: pip install -e .
+
+      - name: Install pytests
+        run: pip install pytest pytest-cov
 
       - name: Run tests
         run: |
