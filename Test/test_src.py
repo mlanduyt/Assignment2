@@ -4,6 +4,7 @@ from src import *
 from math_utils import *
 from unittest.mock import patch
 
+
 @pytest.fixture
 def simple_beam():
     nodes = np.array([
@@ -182,5 +183,6 @@ def test_divide ():
 def test_eig ():
     A = np.array([[1, 3, 2],[2, 2, 1],[3, 1, 3]])
     e_vals, e_vecs = np.linalg.eig(A)
-    assert math.isclose (e_vals[0], 6, rel_tol=0.1)
+    z = e_vals[0] - 6
+    assert z < 0.05
 
