@@ -1,2 +1,0 @@
-  In this assignment, the forms of Generative AI that were used was vsCode Copilot, 
-which assisted in code writing.
