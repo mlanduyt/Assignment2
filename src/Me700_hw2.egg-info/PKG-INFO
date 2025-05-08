@@ -1,0 +1,81 @@
+Metadata-Version: 2.4
+Name: Me700_hw2
+Version: 0.0.0
+Summary: ME700 Assignment 2
+Author-email: Michael Landuyt <mlanduyt@bu.edu>
+License: MIT License
+        
+        Copyright (c) 2025 Michael Landuyt
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+Project-URL: Homepage, https://github.com/mlanduyt/Assignment2
+Project-URL: Bug Tracker, https://github.com/mlanduyt/Assignment2/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: matplotlib>=3.9.2
+Requires-Dist: numpy>=1.23.2
+Requires-Dist: pytest>=7.1.2
+Requires-Dist: pytest-cov>=3.0.0
+Requires-Dist: scipy
+Dynamic: license-file
+
+
+[![python](https://img.shields.io/badge/python-3.12-blue.svg)](https://www.python.org/)
+![os](https://img.shields.io/badge/os-ubuntu%20|%20macos%20|%20windows-blue.svg)
+[![license](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/sandialabs/sibl#license)
+
+[![codecov](https://codecov.io/gh/mlanduyt/Assignment2/graph/badge.svg?token=V8BG4FHMD7)](https://codecov.io/gh/mlanduyt/Assignment2)
+[![tests](https://github.com/mlanduyt/Assignment2/actions/workflows/tests.yml/badge.svg)](https://github.com/mlanduyt/Assignment2/actions)
+
+
+
+### Getting Started
+
+### Conda environment, install, and testing <a name="install"></a>
+
+To install this package, please begin by setting up a conda environment (mamba also works):
+```bash
+conda create --name XXX-method-env python=3.12
+```
+Once the environment has been created, activate it:
+
+```bash
+conda activate XXX-method-env
+```
+Double check that python is version 3.12 in the environment:
+```bash
+python --version
+```
+install the applicable pips utilized for this code
+```bash
+pip install -e .
+```
+### Background
+This code is meant to create and solve strutural response. This is performed by defining nodes, connecting them through matrices, assigning boundary conditions and external forces. This code determines displacements, rotations, and internal forces; which are subsequently utilized to determine the buckling mode and shape. 
+
+### Examples/Template
+The problems required to be solved are worked out under the example folder, a template is provided to be filled out for any future problem. 
+
+### Tests
+Tests are executed via the Pytest function
+
