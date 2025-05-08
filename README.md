@@ -32,10 +32,18 @@ pip install -e .
 This code is meant to create and solve strutural response. This is performed by defining nodes, connecting them through matrices, assigning boundary conditions and external forces. This code determines displacements, rotations, and internal forces; which are subsequently utilized to determine the buckling mode and shape. 
 
 ### Examples/Template
+The tutorials provided evaluate fundamental pipe flow equations. The applicable navier stokes equations are described in each tutorial. 
 
+## Poiseuille Flow
+This flow in a pipe is driven by a pressure difference between each ends. Each wall provides a no-slip boundary condition, generating a flow as seen below: 
+
+![alt text](poiseuille_flow.png)
+
+## Couette Flow
+This flow in a 'pipe' represents an analogy to a simple boundary layer, in which the bulk flow is simplified to a moving wall. This flow is evaluated as if a pipe existed with a no-slip motionless wall and a no-slip moving wall at some velocity. This flow is seen below:
 
 ![alt text](couette_flow.png)
 
 ### Tests
-Tests are executed via the Pytest function
+Tests are executed via the Pytest function. Code coverage is provided. 
 
