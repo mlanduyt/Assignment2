@@ -29,7 +29,7 @@ def poisson(p, b, dx, dy):
         p[-1, :] = p[-2, :]
     return p
 
-# Main loop
+# Main solver, used to loop through time steps
 def solver(dx, dy, u, v, rho, p, b, dt, nt, nu, dpdx):
     for n in range(nt):
         un = u.copy()
