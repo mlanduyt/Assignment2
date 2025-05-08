@@ -29,7 +29,7 @@ install the applicable pips utilized for this code
 pip install -e .
 ```
 ### Background
-This code is meant to create and solve strutural response. This is performed by defining nodes, connecting them through matrices, assigning boundary conditions and external forces. This code determines displacements, rotations, and internal forces; which are subsequently utilized to determine the buckling mode and shape. 
+This code is designed to operate as a simple computational fluid dynamics solver. This simple solver uses the differential form of the navier stokes equation to step through fluid dynamics and solve for the expected flow response. The solver is used to calculate poiseuille and couette flow; and compared to expected analytical results. 
 
 ### Examples/Template
 The tutorials provided evaluate fundamental pipe flow equations. The applicable navier stokes equations are described in each tutorial. 
