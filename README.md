@@ -3,8 +3,8 @@
 ![os](https://img.shields.io/badge/os-ubuntu%20|%20macos%20|%20windows-blue.svg)
 [![license](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/sandialabs/sibl#license)
 
-[![codecov](https://codecov.io/gh/mlanduyt/Assignment2/graph/badge.svg?token=V8BG4FHMD7)](https://codecov.io/gh/mlanduyt/Assignment2)
-[![tests](https://github.com/mlanduyt/Assignment2/actions/workflows/tests.yml/badge.svg)](https://github.com/mlanduyt/Assignment2/actions)
+[![codecov](https://codecov.io/gh/mlanduyt/Final_Project/graph/badge.svg?token=V8BG4FHMD7)](https://codecov.io/gh/mlanduyt/Final_Project)
+[![tests](https://github.com/mlanduyt/Final_Project/actions/workflows/tests.yml/badge.svg)](https://github.com/mlanduyt/Final_Project/actions)
 
 
 
