@@ -9,7 +9,7 @@
 
 ### Getting Started
 
-### Conda environment, install, and testing <a name="install"></a>
+### Conda environment & installation <a name="install"></a>
 
 To install this package, please begin by setting up a conda environment:
 ```bash
@@ -28,6 +28,7 @@ install the applicable pips utilized for this code
 ```bash
 pip install -e .
 ```
+
 ### Background
 This code is designed to operate as a simple computational fluid dynamics solver. This simple solver uses the differential form of the navier stokes equation to step through fluid dynamics and solve for the expected flow response. The solver is used to calculate poiseuille and couette flow; and compared to expected analytical results. 
 
@@ -73,5 +74,5 @@ This flow in a 'pipe' represents an analogy to a simple boundary layer, in which
 This flow evaluates an imparted vertical velocity progressing through each time step. This flow is merely to showcase time steps and the result of an unusual flow case. Therefore, the comparison to analytical results are not performed. 
 
 ### Tests
-Tests are executed via the Pytest function. Code coverage is provided. 
+Tests are executed via the Pytest function, tests are executed automatically. Code coverage is provided. 
 
