@@ -29,6 +29,9 @@ install the applicable pips utilized for this code
 pip install -e .
 ```
 
+Each of the .ipynb files under the tutorial folder can be executed using the steps delineated above. 
+
+
 ### Background
 This code is designed to operate as a simple computational fluid dynamics solver. This simple solver uses the differential form of the navier stokes equation to step through fluid dynamics and solve for the expected flow response. The solver is used to calculate poiseuille and couette flow; and compared to expected analytical results. 
 
