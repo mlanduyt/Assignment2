@@ -38,7 +38,7 @@ def test_solver_velocity_field():
     assert u_out.shape == u.shape
     assert np.all(np.isfinite(u_out))
 
-$ Test solver against expected velocity change based on known dpdx
+# Test solver against expected velocity change based on known dpdx
 def test_velocity_change():
     dx, dy, u, v, rho, p, b, dt, nt, nu, dpdx = setup_grid()
     u_before = u.copy()
